@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Endzone | Acceuil</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: "Roboto", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			margin-top: 0px;
+  			margin-right: 0px;
+  			margin-bottom: 0px;
+  			margin-left: 0px
+		}
+		#topbar {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			background-color: #;
+		}
+		.bouton {
+			font-family: "Roboto", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+		  	background-color: #1A1D1E;
+		  	color: #EBEBEB;
+		  	padding: 16px;
+		  	font-size: 16px;
+		  	border: none;
+			width: 150px;
+			text-align: center;
+		}
+		
+		.listes {
+			background-color: #1A1D1E;
+			width: 100%;
+			text-align: center;
+		}
+		.liste {
+		  	position: relative;
+		  	display: inline-block;
+			text-align: center;
+			padding-left: 3px;
+			padding-right: 3px;
+		}
+		
+		.liste-contenu {
+		  display: none;
+		  position: absolute;
+		  background-color: #1A1D1E;
+		  min-width: 150px;
+		  z-index: 1;
+		}
+
+		.liste-contenu a {
+		  color: #EBEBEB;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.liste-contenu a:hover {background-color: #2F2F2F;}
+
+		.liste:hover .liste-contenu {display: block;}
+
+		.liste:hover .bouton {background-color: #2F2F2F;}
+		
+		.title-logo {
+			width: 100px;
+		}
+		.bouton:hover {
+			background-color: #2F2F2F;
+		}
+		.banniere {
+			position: relative;
+		}
+		.banner-img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+			filter: brightness(70%);
+			position: absolute;
+		}
+		.banner-text {
+			z-index: 100;
+  			position: absolute;
+			top: 30%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			text-align: center;
+			font-size: 40px;
+			color: white;
+			font-weight: 700;
+			max-width: 65%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="entete">
+		
+		<div id="menu">
+			<div id="topbar">
+				<center><img class="title-logo" src="EndzoneTextCROP.png"></center>
+			</div>
+			<div class="listes">
+				<button href="#" class="bouton">NEW</button>
+				<div class="liste">
+					<button href="#" class="bouton">EQUIPMENT</button>
+					<div class="liste-contenu">
+						<a href="#">Mouthguards</a>
+						<a href="#">Football Cleats</a>
+						<a href="#">Back Plates</a>
+			  		</div>
+				</div>
+				<div class="liste">
+					<button href="#" class="bouton">CLOTHING</button>
+					<div class="liste-contenu">
+						<a href="#">Unisex</a>
+						<a href="#">Men</a>
+						<a href="#">Women</a>
+			  		</div>
+				</div>
+			</div>
+		</div>
+	<div id="banniere"></div>
+		<img class="banner-img" src="image.webp">
+		<p class="banner-text">HIGH QUALITY FOOTBALL PRODUCTS</p>
+	</div>
+
+	<div id="contenu"></div>
+
+	<div id="pied"></div>
+	
+</body>
+</html>
